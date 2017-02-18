@@ -1,0 +1,78 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    background: #14c99c;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    z-index: 100;
+}
+header{
+    margin-top: 50px;
+    line-height: 50px;
+    font-size: 2em;
+}
+.timers {
+    text-align: center;
+    display: inline-flex;
+    margin: 80px auto;
+    padding: 50px 0;
+
+}
+.break-timer, .session-timer {
+    width: 220px;
+    height: auto;
+}
+.btn {
+    line-height: 40px;
+    width: 120px;
+    border-radius: 50%;
+    background: rgba(18, 46, 229, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    outline: none;
+}
+#brkTime , #sessTime {
+    line-height: 60px;
+    font-size: 40px;
+}
+.pomodoro {
+    z-index: 1;
+    width: 300px;
+    height: 150px;
+    margin: 25px auto;
+}
+.pomodoro h1{
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+.start {
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #14c99c;
+    border: solid 2px #808080;
+    outline: none;
+}
+.display {
+    font-size: 50px;
+    color: #fff;
+}
+#progress {
+    display: inline-block;
+    margin: -40px auto;
+    width: 10%;
+    height: 10%;
+    background: white;
+}
+.start:hover {
+    border: outset rgba(18, 46, 229, 0.5);
+}
+@media screen and (max-width: 798px) {
+    .timers {
+        display: inline-block;
+    }
+}
